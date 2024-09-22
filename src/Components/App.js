@@ -70,13 +70,6 @@ function reducer(state, action) {
 			};
 		case "reset":
 			return { ...initialState, questions: state.questions, status: "ready" };
-		// return {
-		// 	...state,
-		// 	status: "ready",
-		// 	index: 0,
-		// 	answer: null,
-		// 	points: 0,
-		// };
 		case "tick":
 			return {
 				...state,
